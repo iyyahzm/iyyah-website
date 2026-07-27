@@ -19,15 +19,13 @@
       <nav class="nav">
         <a href="index.html" class="nav-link">Home</a>
         <span class="nav-separator">|</span>
-        <a href="index.html#projects" class="nav-link">Projects</a>
+        <a href="projects.html" class="nav-link">Projects</a>
         <span class="nav-separator">|</span>
         <a href="index.html#skills" class="nav-link">Skills</a>
         <span class="nav-separator">|</span>
         <a href="resume.html" class="nav-link">Resume</a>
         <span class="nav-separator">|</span>
-        <a href="index.html#about" class="nav-link">About</a>
-        <span class="nav-separator">|</span>
-        <a href="index.html#leadership" class="nav-link">Leadership</a>
+        <a href="about.html" class="nav-link">About</a>
         <span class="nav-separator">|</span>
         <a href="index.html#contact" class="nav-link">Contact</a>
       </nav>
@@ -62,35 +60,54 @@
   <main class="desktop">
     <h2 class="section-title">Explore</h2>
     <div class="icons">
-      <div class="icon"><img src="assets/folder-original.png" class="folder-svg"><div class="label">Projects</div></div>
-      <div class="icon"><img src="assets/folder-purple.png" class="folder-svg"><div class="label">Skills</div></div>
-      <div class="icon"><img src="assets/folder-green.png" class="folder-svg"><div class="label">Resume</div></div>
-      <div class="icon"><img src="assets/folder-yellow.png" class="folder-svg"><div class="label">About</div></div>
-      <div class="icon"><img src="assets/folder-red.png" class="folder-svg"><div class="label">Leadership</div></div>
-    </div>
+  <a href="projects.html" class="icon"><img src="assets/folder-original.png" class="folder-svg"><div class="label">Projects</div></a>
+  <a href="resume.html" class="icon"><img src="assets/folder-green.png" class="folder-svg"><div class="label">Resume</div></a>
+  <a href="about.html" class="icon"><img src="assets/folder-yellow.png" class="folder-svg"><div class="label">About</div></a>
+</div>
   </main>
+
+  <section id="skills" class="content-section">
+    <h2 class="section-title">Skills</h2>
+    <div class="projects-grid">
+      <div class="project-card skill-card">
+        <h3>🔩 Technical Skills</h3>
+        <p>Python, Java, SQL, Scheme, Data Structures & Algorithms, Pandas, NumPy, Matplotlib, Git/GitHub</p>
+      </div>
+      <div class="project-card skill-card">
+        <h3>🧠 AI & LLM Tooling</h3>
+        <p>Large Language Models (Claude), Claude Code, Prompt Engineering, AI Output Alignment Review</p>
+      </div>
+      <div class="project-card skill-card">
+        <h3>🔍 Research & Analysis</h3>
+        <p>Empirical Research Design, Survey Design & User Research, Statistical Analysis, Data Analysis & Evaluation</p>
+      </div>
+    </div>
+  </section>
 
   <section id="projects" class="content-section">
     <h2 class="section-title">Key Projects</h2>
     <div class="projects-grid">
       <div class="project-card">
-        <div class="project-image placeholder">Insert Image</div>
-        <h3>Insert Project Title</h3>
-        <p>Insert Project Description.</p>
-        <a href="#" class="project-btn pink">View Project</a>
+        <img src="assets/dataworld.png" alt="Global Population & Poverty Trends visualization" class="project-image">
+        <h3>Global Population & Poverty Trends</h3>
+        <p>Analyzed global population growth and poverty trends across countries using Python and NumPy, exploring how demographic and economic indicators shift over time.</p>
+        <a href="projects.html" class="project-btn pink">View Project</a>
       </div>
       <div class="project-card">
-        <div class="project-image placeholder">Insert Image</div>
-        <h3>Insert Project Title</h3>
-        <p>Insert Project Description.</p>
-        <a href="#" class="project-btn purple">View Project</a>
+        <img src="assets/gettywords.jpg.webp" alt="Ngram Frequency Tool visualization" class="project-image">
+        <h3>Ngram Frequency Tool</h3>
+        <p>Built a Java word-frequency analysis tool using tries and the Google Books Ngram dataset to study how language usage patterns change across decades.</p>
+        <a href="projects.html" class="project-btn purple">View Project</a>
       </div>
       <div class="project-card">
-        <div class="project-image placeholder">Insert Image</div>
-        <h3>Insert Project Title</h3>
-        <p>Insert Project Description.</p>
-        <a href="#" class="project-btn yellow">View Project</a>
+        <img src="assets/maze.png" alt="World Generator screenshot" class="project-image">
+        <h3>World Generator</h3>
+        <p>Implemented a procedurally generated Java world with algorithmic room placement, hallway connections, and persistence logic for saving and loading progress.</p>
+        <a href="projects.html" class="project-btn yellow">Demo Available on Request</a>
       </div>
+    </div>
+    <div style="text-align:center; margin-top:32px;">
+      <a href="projects.html" class="btn btn-primary">View All Projects →</a>
     </div>
   </section>
 
@@ -99,27 +116,18 @@
       <div class="contact-left">
         <h2>Contact</h2>
         <p>Have any inquiries or interested in working together? Feel free to reach out.</p>
-        <div class="contact-info">
-          <a href="mailto:iyyahzm@gmail.com">✉️ iyyahzm@gmail.com</a>
-          <div class="socials">
-            <a href="https://www.linkedin.com/in/iyyah" target="_blank" aria-label="LinkedIn">
-              <img src="assets/linkedin.png" alt="LinkedIn">
-            </a>
-            <a href="https://github.com/iyyahzm" target="_blank" aria-label="GitHub">
-              <img src="assets/github.png" alt="GitHub">
-            </a>
-          </div>
+        <p>
+          <a href="mailto:iyyahzm@gmail.com" class="contact-email-inline">✉️ iyyahzm@gmail.com</a>
+        </p>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/iyyah" target="_blank" aria-label="LinkedIn">
+            <img src="assets/linkedin.png" alt="LinkedIn">
+          </a>
+          <a href="https://github.com/iyyahzm" target="_blank" aria-label="GitHub">
+            <img src="assets/github.png" alt="GitHub">
+          </a>
         </div>
       </div>
-      <form class="contact-form">
-        <div class="row">
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
-        </div>
-        <input type="email" placeholder="Email" />
-        <textarea placeholder="Message"></textarea>
-        <button type="submit" class="contact-send">Send</button>
-      </form>
     </div>
   </section>
 
