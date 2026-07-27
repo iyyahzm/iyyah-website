@@ -51,11 +51,18 @@
     </div>
 
     <div style="max-width:900px; margin:0 auto;">
-  <img src="assets/resume-preview.png"
-       alt="Iyyah Zareef-Mustafa Resume"
-       style="width:100%; display:block; border-radius:16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
-</div>
+      <img src="assets/resume-preview.png"
+           alt="Iyyah Zareef-Mustafa Resume"
+           style="width:100%; display:block; border-radius:16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); image-rendering: -webkit-optimize-contrast;">
+    </div>
 
+    <p style="text-align:center; margin-top:16px; opacity:0.6; font-size:14px;">
+      Having trouble viewing the resume above?
+      <a href="assets/IyyahZareef-Mustafa_Resume.pdf" target="_blank">Open it directly</a>.
+    </p>
+  </section>
+
+  <script>
     document.getElementById('download-resume-btn').addEventListener('click', function(e) {
       e.preventDefault();
       fetch('assets/IyyahZareef-Mustafa_Resume.pdf')
