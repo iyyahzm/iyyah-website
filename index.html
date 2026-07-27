@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iyyah Desktop</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ================= TOP BAR ================= -->
+  <header class="topbar">
+
+    <!-- LEFT -->
+    <a href="index.html" class="brand">
+  <div class="logo">
+    <img src="assets/logo.png" alt="Iyyah Logo">
+  </div>
+  <span class="brand-name">Iyyah Zareef-Mustafa</span>
+</a>
+
+
+    <!-- CENTER NAV -->
+    <div class="topbar-center">
+  <nav class="nav">
+    <a href="#" class="nav-link">Home</a>
+    <span class="nav-separator">|</span>
+    <a href="#" class="nav-link">Projects</a>
+    <span class="nav-separator">|</span>
+    <a href="#" class="nav-link">Skills</a>
+    <span class="nav-separator">|</span>
+    <a href="#" class="nav-link">Resume</a>
+    <span class="nav-separator">|</span>
+    <a href="#" class="nav-link">About</a>
+    <span class="nav-separator">|</span>
+    <a href="#" class="nav-link">Leadership</a>
+    <span class="nav-separator">|</span>
+    <a href="#" class="nav-link">Contact</a>
+  </nav>
+</div>
+
+    <!-- RIGHT -->
+    <div class="topbar-right">
+
+      <!-- Search -->
+      <div class="search">
+        <span class="search-icon">⌕</span>
+        <input type="text" placeholder="Search">
+      </div>
+
+      <!-- Shop Icon
+      <button class="shop-btn" aria-label="Shop">
+        <svg viewBox="0 0 24 24" class="shop-icon">
+          <path d="M6 8V7a6 6 0 0 1 12 0v1" fill="none"/>
+          <path d="M4 8h16l-1.5 12H5.5L4 8Z" fill="none"/>
+        </svg>
+      </button>
+
+    </div> -->
+
+  </header>
+
+  <section class="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <h1>Iyyah Zareef-Mustafa</h1>
+      <h2>Data Analyst</h2>
+      <p class="location">
+  Bay Area, CA · Onsite, Hybrid & Remote
+      <p>
+        I analyze and interpret data, delivering actionable insights for informed decision-making.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects →</a>
+        <a href="resume.pdf" class="btn btn-secondary">Download Resume</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+  <img src="assets/DTHeadshot.jpeg"
+     alt="Iyyah Zareef-Mustafa"
+     class="profile-image">
+    </div>
+  </div>
+  <div class="scroll-cue">SCROLL</div>
+  </div>
+</section>
+
+  <!-- ================= DESKTOP ================= -->
+
+  <main class="desktop">
+    <h2 class="section-title">Explore</h2>
+    <div class="icons">
+  <div class="icon">
+    <img src="assets/folder-original.png" class="folder-svg">
+    <div class="label">Projects</div>
+  </div>
+
+  <div class="icon">
+    <img src="assets/folder-purple.png" class="folder-svg">
+    <div class="label">Skills</div>
+  </div>
+
+  <div class="icon">
+    <img src="assets/folder-green.png" class="folder-svg">
+    <div class="label">Resume</div>
+  </div>
+
+  <div class="icon">
+    <img src="assets/folder-yellow.png" class="folder-svg">
+    <div class="label">About</div>
+  </div>
+
+  <div class="icon">
+    <img src="assets/folder-red.png" class="folder-svg">
+    <div class="label">Leadership</div>
+  </div>
+</div>
+</main>
+
+  <section id="projects" class="content-section">
+  <h2 class="section-title">Key Projects</h2> <!-- or Selected Projects-->
+   <!-- Project 1 -->
+  <div class="projects-grid">
+    <div class="project-card">
+      <div class="project-image placeholder">
+        Insert Image
+      </div>
+      <h3>Insert Project Title</h3>
+      <p>
+        Insert Project Description.
+      </p>
+      <a href="#" class="project-btn pink">View Project</a>
+    </div>
+   <!-- Project 2 -->
+    <div class="project-card">
+      <div class="project-image placeholder">
+        Insert Image
+      </div>
+      <h3>Insert Project Title</h3>
+      <p>
+        Insert Project Description.
+      </p>
+      <a href="#" class="project-btn purple">View Project</a>
+    </div>
+   <!-- Project 3 -->
+    <div class="project-card">
+      <div class="project-image placeholder">
+        Insert Image
+      </div>
+      <h3>Insert Project Title</h3>
+      <p>
+        Insert Project Description.
+      </p>
+      <a href="#" class="project-btn yellow">View Project</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    
+    <div class="contact-left">
+      <h2>Contact</h2>
+      <p>Have any inquiries or interested in working together? Feel free to reach out.</p>
+</p>
+      <div class="contact-info">
+        <a href="mailto:iyyahsart@gmail.com">✉️ iyyahsart@gmail.com</a>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn">
+      <img src="assets/linkedin.png" alt="LinkedIn">
+    </a>
+
+    <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+      <img src="assets/github.png" alt="GitHub">
+    </a>
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form">
+      <div class="row">
+        <input type="text" placeholder="First Name" />
+        <input type="text" placeholder="Last Name" />
+      </div>
+      <input type="email" placeholder="Email" />
+      <textarea placeholder="Message"></textarea>
+      <button type="submit" class="contact-send">Send</button>
+    </form>
+
+  </div>
+</section>
+
+
+</body>
+</html>
