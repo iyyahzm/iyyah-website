@@ -51,36 +51,10 @@
     </div>
 
     <div style="max-width:900px; margin:0 auto;">
-      <canvas id="pdf-canvas" style="width:100%; display:block; border-radius:16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);"></canvas>
-    </div>
-
-    <p style="text-align:center; margin-top:16px; opacity:0.6; font-size:14px;">
-      Having trouble viewing the resume above?
-      <a href="assets/IyyahZareef-Mustafa_Resume.pdf" target="_blank">Open it directly</a>.
-    </p>
-  </section>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
-  <script>
-    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
-
-    const pdfUrl = 'assets/IyyahZareef-Mustafa_Resume.pdf';
-
-    pdfjsLib.getDocument(pdfUrl).promise.then(function(pdf) {
-      pdf.getPage(1).then(function(page) {
-        const scale = 2;
-        const viewport = page.getViewport({ scale: scale });
-        const canvas = document.getElementById('pdf-canvas');
-        const context = canvas.getContext('2d');
-        canvas.height = viewport.height;
-        canvas.width = viewport.width;
-
-        page.render({
-          canvasContext: context,
-          viewport: viewport
-        });
-      });
-    });
+  <img src="assets/resume-preview.png"
+       alt="Iyyah Zareef-Mustafa Resume"
+       style="width:100%; display:block; border-radius:16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
+</div>
 
     document.getElementById('download-resume-btn').addEventListener('click', function(e) {
       e.preventDefault();
