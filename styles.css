@@ -157,25 +157,13 @@
 
 html {
   scroll-behavior: smooth;
+  min-height: 100%;
 }
 
 
 html, body {
-  background-color: rgb(255, 248, 238);
   height: 100%;
   margin: 0;
-}
-
-.folder {
-  background-color: rgba(255, 255, 255, 0.2); /* very subtle */
-  border-radius: 10px;
-  transition: background-color 0.2s ease;
-}
-
-.folder:hover {
-  background-color: rgba(255, 255, 255, 0.4);
-  /* transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); */
 }
 
 body {
@@ -186,13 +174,20 @@ body {
     "SF Pro Display",
     system-ui,
     sans-serif;
+  position: relative;
+  color: rgba(0,0,0,.85);
+}
 
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
   background:
     radial-gradient(900px 600px at 30% 20%, rgba(255,255,255,.75), transparent 60%),
     radial-gradient(900px 600px at 70% 10%, rgba(255,255,255,.5), transparent 55%),
     linear-gradient(180deg, #f3ede4, #ece4d8);
-
-  color: rgba(0,0,0,.85);
+  background-repeat: no-repeat;
 }
 
 .profile-image {
@@ -409,21 +404,20 @@ body {
   z-index: 1;
 }
 
-.hero-right::before {
+/* .hero-right::before {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
-  width: 120px;
+  width: 200px;
   height: 100%;
-
   background: linear-gradient(
     to right,
     rgba(255, 248, 238, 1),
     rgba(255, 248, 238, 0)
   );
-  z-index: 1;
-}
+  z-index: .3;
+} */
 
 /* Image (original card-style placement) */
 .hero-right img {
