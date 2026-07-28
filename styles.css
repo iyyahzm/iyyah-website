@@ -208,9 +208,155 @@ body::before {
   color: rgba(0,0,0,1);
 }
 
+/* ============ HAMBURGER BUTTON (hidden on desktop) ============ */
+.hamburger-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger-btn span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: rgba(0,0,0,.75);
+  border-radius: 2px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.hamburger-btn.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger-btn.open span:nth-child(2) { opacity: 0; }
+.hamburger-btn.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.mobile-menu {
+  display: none;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+/* ============ MOBILE BREAKPOINT ============ */
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
+  /* Topbar: swap nav + socials for the hamburger */
+  .topbar-center,
+  .topbar-right {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: flex;
+  }
+
+  .brand-name {
+    font-size: 16px;
+  }
+
+  .logo {
+    width: 32px;
+    height: 32px;
+  }
+
+  /* Mobile dropdown menu */
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    max-height: 0;
+    overflow: hidden;
+    background: rgba(255,255,255,.97);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(0,0,0,.08);
+    transition: max-height 0.3s ease;
+    z-index: 9;
+  }
+
+  .mobile-menu.open {
+    max-height: 400px;
+  }
+
+  .mobile-nav-link {
+    padding: 16px 24px;
+    font-size: 17px;
+    text-decoration: none;
+    color: rgba(0,0,0,.8);
+    border-bottom: 1px solid rgba(0,0,0,.06);
+  }
+
+  .mobile-menu-socials {
+    display: flex;
+    gap: 20px;
+    padding: 16px 24px;
+  }
+
+  /* Explore folder icons: stack vertically instead of side-by-side */
+  .icons {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .folder-svg {
+    width: 140px;
+  }
+
+  /* Hero: stack vertically, circular photo */
+  .hero {
+    padding: 100px 24px 60px;
+    min-height: auto;
+  }
+
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left {
+    max-width: 100%;
+    order: 2;
+  }
+
+  .hero-right {
+    position: static;
+    order: 1;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 28px;
+    border-radius: 50%;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+  }
+
+  .hero-right img {
+    border-radius: 50%;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+}
+
 .topbar-social-icon {
-  width: 90px;
-  height: 90px;
+  height: 26px;
+  width: auto;
   object-fit: contain;
 }
 
